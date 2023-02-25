@@ -1,0 +1,18 @@
+import java.util.*;
+public class Sortingnames {
+ public static void main(String[] args) {
+ Scanner input = new Scanner(System.in);
+ System.out.print("enter the no.of.strings:- ");
+ int n = input.nextInt();
+ String[] arr = new String[n];
+ System.out.println("enter the strings:- ");
+ for(int i=0;i<n;i++){
+ arr[i] = input.next();
+ }
+ System.out.println("the sorted Strings are:- ");
+ Arrays.sort(arr);
+ for(String j: arr){
+ System.out.println(j);
+ }
+ }
+}
